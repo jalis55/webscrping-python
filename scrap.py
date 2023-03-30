@@ -26,13 +26,8 @@ def scrap_data(max_page):
             Industry = td_list[2].text  # industry
 
             csv_writer.writerow([No, Company, Address, Phone, Industry])
-            print(No)
+         
 
-            print(Company)
-            print(Address)
-            print(Phone)
-            print(Industry)
-            print("=============================================")
         page=page+1
 
 scrap_data(489)
